@@ -14,15 +14,17 @@ uv init
 uv venv
 source .venv/bin/activate
 ```
-
 ## freeze
 ```bash
 uv pip freeze > requirements.txt
 ```
-
 ## sync
 ```bash
 uv sync
+```
+## install requirements
+```bash
+uv pip install -r requirements.txt
 ```
 
 ## tts
