@@ -12,7 +12,7 @@ import edge_tts
 # TEXT = "Hello World!"
 # VOICE = "en-GB-SoniaNeural"
 
-TEXT = "你好，今天又是美好的一天。风和日丽，万里晴空!"
+TEXT = "你好，今天又是美好的一天。风和日丽，万里晴空! very good!"
 VOICE = "zh-CN-XiaoxiaoNeural"
 
 OUTPUT_FILE = "test.mp3"

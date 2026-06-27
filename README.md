@@ -15,33 +15,6 @@ uv venv
 source .venv/bin/activate
 ```
 
-### tts
-https://github.com/rany2/edge-tts
-
-dependencies
-```bash
-uv pip install edge-tts
-```
-
-run tts
-```bash
-uv run edge_tts_main.py
-```
-
-### stt
-https://github.com/openai/whisper
-
-dependencies
-```bash
-uv pip install openai-whisper
-```
-
-run stt
-```bash
-uv run openai_whisper_main.py
-```
-The directory for downloaded models on Mac is `~/.cache/whisper/large-v3-turbo.pt`
-
 ## freeze
 ```bash
 uv pip freeze > requirements.txt
@@ -51,3 +24,41 @@ uv pip freeze > requirements.txt
 ```bash
 uv sync
 ```
+
+## tts
+### https://github.com/rany2/edge-tts
+
+dependencies
+```bash
+uv pip install edge-tts
+```
+
+run tts
+```bash
+uv run tts_rany2_edge-tts.py
+```
+
+## stt
+### https://github.com/openai/whisper
+dependencies
+```bash
+uv pip install openai-whisper
+```
+run
+```bash
+uv run stt_openai_whisper.py
+```
+The directory for downloaded models on Mac is `~/.cache/whisper/large-v3-turbo.pt`
+
+### https://github.com/SYSTRAN/faster-whisper(Deprecated)
+The Mac can only use the CPU.
+
+dependencies
+```bash
+uv pip install faster-whisper
+```
+run
+```bash
+uv run stt_SYSTRAN_faster-whisper.py
+```
+The directory for downloaded models on Mac is `~/.cache/huggingface/hub`
