@@ -27,15 +27,27 @@ uv sync
 
 ## tts
 ### https://github.com/rany2/edge-tts
-
 dependencies
 ```bash
 uv pip install edge-tts
 ```
-
 run tts
 ```bash
 uv run tts_rany2_edge-tts.py
+```
+
+### https://github.com/nateshmbhat/pyttsx3
+dependencies
+```bash
+uv pip install pyttsx3
+```
+run
+```bash
+uv run tts_nateshmbhat_pyttsx3.py
+```
+Convert WAV format to MP3
+```bash
+ffmpeg -i test.wav test.mp3
 ```
 
 ## stt
@@ -50,7 +62,7 @@ uv run stt_openai_whisper.py
 ```
 The directory for downloaded models on Mac is `~/.cache/whisper/large-v3-turbo.pt`
 
-### https://github.com/SYSTRAN/faster-whisper(Deprecated)
+### https://github.com/SYSTRAN/faster-whisper (Deprecated)
 The Mac can only use the CPU.
 
 dependencies
